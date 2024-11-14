@@ -1,0 +1,1155 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+    color: #222;
+}
+/*네비게이션 및 상단 요소*/
+div.nav_fixed{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    transition: all 0.3s ease;
+}
+.navheight{
+    height: 119px;
+}
+.bgColor{    /*스크롤시 화이트 배경 - 스크립트 제어*/
+    background-color: #fff;
+}
+/*상단 요소*/
+div.top_element{
+    width: 1150px;
+    height: 66px;
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+}
+/*언어 선택*/
+div.language_box_wrap{
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.language_select button{
+    float: left;
+    padding-right: 22px;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    color: #6C6C6C;
+    border: none;
+    background-color: transparent;
+    background-image: url(../img/indexPG/main/Expand_down_gray.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.language_box_wrap>div{
+    clear: both;
+}
+div.language_list{
+    position: relative;
+    width: 100px;
+    display: none;
+}
+div.language_list li{
+    padding: 6px 0;
+    font-size: 14px;
+    text-align: center;
+    background-color: #83838347;
+    cursor: pointer;
+}
+div.language_list li:hover{
+    color: #6C6C6C;
+}
+div.language_list li:first-child{
+    border-bottom: 1px solid #fff;
+}
+/*로고*/
+div.logo{
+    float: left;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*로그인/회원가입/마이페이지*/
+.top_element div.login_container{
+    width: 250px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.login_container ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.login_container ul li a{
+    color: #6C6C6C;
+    font-size: 14px;
+    font-weight: 600;
+}
+/*네비게이션*/
+/*메인메뉴*/
+nav{
+    width: 100%;
+}
+div.mainmenu{
+    width: 795px;
+    margin: 0 auto;
+}
+nav ul{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav ul li a{
+    padding: 2px 0;
+    font-weight: 600; 
+    transition: box-shadow 0.5s ease;
+}
+nav ul li a:hover{
+    box-shadow: 0px 4px 0px #116AB0;
+}
+/*서브메뉴*/
+div.subMenu_wrap{
+    width: 1400px;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
+}
+div.inner_wrap{
+    width: 100%;
+    height: 470px;
+    position: relative;
+}
+div.inner_wrap>div{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 12px 0;
+    position: absolute;
+    top: 0;
+    left: 0%;
+    transition: all 0.3s ease;
+}
+.hideMenu{
+    opacity: 0;
+}
+.showMenu{
+    opacity: 1;
+}
+/*서브메뉴 공통 스타일*/
+div.sub_element{
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 30px 0;
+    padding-top: 30px;
+}
+div.menu_img{
+    width: 400px;
+    height: 234px;
+    float: left;
+}
+div.menu_img img{
+    width: 100%;
+    height: 100%;
+}
+div.menu_img span{
+    display: block;
+    font-size: 20px;
+    color: #116AB0;
+}
+div.sub_menu{
+    width: 60%;
+    overflow: hidden;
+}
+div.sub_menu>div{
+    width: 200px;
+    float: left;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #116AB0;
+}
+ul.sub_list{
+    width: 50%;
+    overflow: hidden;
+    padding: 0 20px;
+    float: left;
+}
+ul.sub_list li a{
+    display: block;
+    padding: 16px 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+/*호텔 & 리조트 서브메뉴*/
+div.hotelResort_sub li.list{
+    float: left;
+}
+div.hotelResort_sub li.list:nth-child(2){
+    margin: 0 30px;
+}
+div.hotelResort_sub li.list>ul>li>a{
+    font-size: 14px;
+    font-weight: 500;
+    color: #505050;
+}
+div.hotelResort_sub span{
+    display: inline-block;
+}
+/*배너 이미지*/
+div.landing_wrap_box{
+    width: 100%;
+    overflow: hidden;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+}
+div.landing_wrap_box a{
+    color: #fff;
+}
+div.bgImges_element_wrap{
+    width: 100%;
+    max-height: 1100px;
+    height: 100vh;
+    background-image: url(../img/hotel-resortPG/main-bn02.db);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    transition: background-image 0.5s ease;
+}
+/*스크롤 다운*/
+div.scrollDown_txt{
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*예약 영역*/
+div.reservat_Area{
+    width: 1600px;
+    position: absolute;
+    bottom: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+div.reservat_Area h1{
+    margin: 18px 0;
+    text-align: left;
+    font-size: 36px;
+    color: #fff;
+}
+/*호텔/리조트 선택*/
+div.select_room_type_wrap{
+    width: 20%;
+    height: 74px;
+    overflow: hidden;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #11111197;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+.room_type li{
+    width: 100%;
+    overflow: hidden;
+    font-size: 14px;
+    position: relative;
+}
+.room_type >li span.title{
+    display: block;
+    padding: 23px 18px;
+    letter-spacing: -1px;
+    font-size: 16px;
+    color: #fff;
+    border: 2px solid #fff;
+}
+span.down_icon{
+    position: absolute;
+    top: 18px;
+    right: 12px;
+}
+ul.room_list li{
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    background-color: #212e4ef5;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+ul.room_list li:last-child{
+    border: none;
+}
+ul.room_list li:hover{
+    background-color: #1a1a1a;
+    transition: 0.3s;
+}
+/*날짜 선택*/
+div.select_date{
+    width: 20%;
+    box-sizing: border-box;
+    float: right;
+    color: #fff;
+    background-color: #11111197;
+    position: absolute;
+    top: 100%;
+    left: 25.4%;
+}
+div.select_date_wrap{
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 18px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.select_date_wrap > span:nth-child(1){
+    font-size: 16px;
+    color: #fff;
+}
+.select_date_wrap span{
+    font-size: 14px;
+    color: #eee;
+}
+span.checkInOut_date{
+    margin-left: 10px;
+}
+span.days{
+    float: right;
+    margin: 2px 30px;
+}
+span.day_icon_box{
+    margin: 1px 0;
+    float: right;
+}
+/*체크인 날짜 달력*/
+div.checkinDay{
+    width: 60%;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+    cursor: pointer;
+    display: none;
+}
+/*달력 닫기*/
+div.calendar_close{
+    width: 28px;
+    float: right;
+    margin-top: 16px;
+    margin-right: 16px;
+    cursor: pointer;
+    /* display: none; */
+}
+/*현재 달*/
+div.now_month{
+    width: 50%;
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 49px;
+    float: left;
+    box-sizing: border-box;
+}
+/*다음 달*/
+div.next_month{
+    width: 50%;
+    overflow: hidden;
+    padding: 20px;
+    float: left;
+    box-sizing: border-box;
+}
+/*현재 달, 다음 달 공통 스타일*/
+div.month_wrap{
+    /* display: none; */
+    transition: transform 0.3s ease;
+}
+div.month_wrap h1{
+    text-align: center;
+    font-size: 16px;
+}
+div.month_wrap h1 span{
+    float: right;
+}
+div.day{
+    margin-top: 16px;
+    border-top: 1px solid #CFCFCF;
+}
+ul.week{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+ul.week li{
+    width: calc(100% / 7);
+    padding: 12px 0;
+    text-align: center;
+    font-size: 16px;
+}
+div.dayBYday{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap; 
+}
+div.dayBYday ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.dayBYday ul li{
+    width: calc(100% / 7);
+    padding: 12px;
+    text-align: center;
+    font-size: 15px;
+}
+li.dayOff{
+    color: #FF3A3A;
+}
+li.Lightly{
+    opacity: 0.3;
+}
+li.today{
+    background-color: #111;
+    color: #fff;
+}
+/*인원 선택*/
+div.select_personnel{
+    width: 24%;
+    overflow: hidden;
+    float: right;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #11111197;
+    position: absolute;
+    top: 100%;
+    left: 51%;
+}
+/*성인 랩핑*/
+div.adult_left{
+    width: 48%;
+    float: left;
+}
+.select_personnel > div > span{
+    width: 28%;
+    margin-top: 12px;
+    display: block;
+    float: left;
+}
+/*어린이 랩핑*/
+div.children_right{
+    width: 48%;
+    float: right;
+}
+/*성인, 어린이 공통 스타일*/
+div.personnel_count_wrap{
+    width: 72%;
+    overflow: hidden;
+    margin-top: 10px;
+    text-align: center;
+    float: right;
+}
+span.personnel_remove_icon{
+    float: left;
+    cursor: pointer;
+    margin-top: -2px;
+}
+span.personnel_add_icon{
+    float: right;
+    cursor: pointer;
+    margin-top: -2px;
+}
+/*검색*/
+div.search_box button{
+    width: 20%;
+    padding: 23px 0;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #116AB0;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+/*룸 추가*/
+div.add_room_btn{
+    color: #fff;
+    position: absolute;
+    right: 0;
+    bottom: -110px;
+    cursor: pointer;
+}
+/*메인*/
+/*서체 클래스 공통 적용*/
+.playfair{
+    font-family: "Playfair", serif;
+}
+.notosans{
+    font-family: "Noto Sans KR", sans-serif;
+}
+/*룸s 영역*/
+section.offers_entire_wrap{
+    max-width: 1920px;
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 120px;
+    position: relative;
+}
+.offers_entire_wrap > h1{
+    margin-bottom: 42px;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+/*룸 선택 버튼*/
+div.rooms_btn_wrap{
+    width: 100%;
+    overflow: hidden;
+}
+div.rooms_btn_wrap{
+    width: 528px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+div.rooms_btn_wrap button{
+    width: 264px;
+    padding: 18px 0;
+    box-sizing: border-box;
+    font-size: 22px;
+    font-weight: 600;  
+    cursor: pointer; 
+    transition: transform 0.3s ease-in-out;
+}
+div.rooms_btn_wrap button:hover{
+    transform: scale(0.92);
+}
+button.resort_btn{
+    float: left;
+}
+button.inFocusBtn{    /*스크립트 제어*/
+    background-color: #281A0A;
+    color: #fff;
+    border: 2px solid #281A0A;
+}
+button.hotel_btn{
+    float: right;
+}
+button.outFocusBtn{ /*스크립트 제어*/
+    background-color: #fff;
+    border: 2px solid #473a2b;
+    color: #473a2b;
+}
+/*리조트/호텔 공통 스타일*/
+.offers_entire_wrap article{
+    width: 1478px;
+    overflow: hidden;
+    background-color: #fffcf7;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    position: absolute;
+    top: 293px;
+    left: 50%;
+    transition: transform 0.5s ease-in-out;
+}
+/*호텔 좌측으로 밀기*/
+.hideBox{
+    transform: translateX(-170%);
+}
+/*클래스 추가 - 스크립트 제어 (가운데 정렬)*/
+.showBox{   
+    transform: translateX(-50%);
+}
+section.offers_entire_wrap article > div{
+    width: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+div.room_textBox{
+    padding-top: 42px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+section.offers_entire_wrap article p{
+    color: #116AB0;
+}
+section.offers_entire_wrap article h2{
+    font-size: 62px;
+    font-weight: 900;
+    letter-spacing: 8px;
+}
+section.offers_entire_wrap span.next_icon_container{
+    margin-top: 10px;
+    float: right;
+}
+div.explanation{
+    width: 84%;
+    margin: 74px 0;
+    word-spacing: 1px;
+    font-size: 18px;
+}
+div.explanation a{
+    color: #4D4D4D;
+}
+ul.room_type_list li{
+    float: left;
+    line-height: 34px;
+}
+.room_type_list li.clear{
+    clear: both;
+}
+ul.room_type_list li::after{
+    content: '|';
+    margin: 0 20px;
+}
+ul.room_type_list li:last-child::after{
+    content: none;
+}
+ul.room_type_list li a{
+    display: inline-block;
+    transition: 0.3s;
+}
+ul.room_type_list li a:hover{
+    box-shadow: inset 0px -4px 0px #116AB0;
+}
+.roomImgBox{
+    height: 552px;
+}
+.roomImgBox img{
+    width: 100%;
+    height: 100%;
+}
+/*이벤트 영역*/
+section.event_entire_wrap{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 120px;
+    position: relative;
+}
+.event_entire_wrap > h1{
+    margin-bottom: 42px;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+article.event_inner_box{
+    width: 100%;
+    height: 460px;
+    position: relative;
+}
+div.event_order_wrap{
+    width: 1478px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*좌측 텍스트 영역*/
+div.event_textL_area{
+    width: 50%;
+    height: 460px;
+    overflow: hidden;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+}
+.event_textL_area .type{
+    font-size: 14px;
+    font-weight: 400;
+    color: #116AB0;
+    letter-spacing: -1px;
+}
+.event_textL_area .title a{
+    display: block;
+    margin: 16px 0;
+    color: #222;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+.event_textL_area .title span.sign{
+    font-size: 40px;
+    font-weight: 200;
+}
+.event_textL_area .title span.lang_en{
+    font-size: 32px;
+    font-weight: 900;
+}
+.event_textL_area ul.detail a{
+    color: #4D4D4D;
+}
+.event_textL_area .detail a li{
+    margin: 4px 0;
+}
+.event_textL_area .detail a li:first-child{
+    margin: 12px 0;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+.event_textL_area .detail li.informat_list{
+    list-style-position: inside;
+    list-style-type: disc;
+    font-size: 12px;
+}
+.event_textL_area .detail li.informat_list span{
+    font-size: 16px;
+}
+ul.add_event_list{
+    width: 200px;
+    padding: 10px 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    top: 30px;
+}
+.add_event_list li{
+    margin: 10px 0;
+}
+.add_event_list li a{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+.add_event_list li a:hover{
+    color: #c0c0c0;
+}
+.add_event_list li span.sign{
+    font-size: 20px;
+}
+.add_event_list>span.more_dot{
+    display: block;
+    width: 2px;
+    height: 2px;
+    margin: 14px auto;
+    background-color: #fff;
+    border-radius: 50%;
+}
+/*우측 이미지 영역*/
+div.event_imgR_area{
+    width: 50%;
+    height: 420px;
+    overflow: hidden;
+    float: left;
+}
+div.event_imgR_area img{
+    width: 100%;
+    height: 100%;
+}
+/*더보기 버튼*/
+.event_inner_box button.more_btn{
+    width: 140px;
+    padding: 12px 0;
+    color: #3C729D;
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+    cursor: pointer;
+    position: absolute;
+    left: 35%;
+    bottom: 10%;
+}
+.event_inner_box button.more_btn:hover{
+    background-color: #116AB0;
+    color: #fff;
+    transition: 0.3s;
+}
+/*백그라운드 컬러 영역*/
+div.event_back_color{
+    width: 100%;
+    height: 235px;
+    background-color: #334a5e;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+/*멤버십 영역*/
+section.membership_entire_wrap{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 120px;
+}
+section.membership_entire_wrap > h1{
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+div.sub_explanat{
+    text-align: center;
+    font-size: 16px;
+    color: #4D4D4D;
+    letter-spacing: -1px;
+    word-spacing: 1px;
+}
+/*멤버십 랩핑*/
+article.membership_wrap{
+    width: 1352px;
+    margin: 0 auto;
+    padding-top: 42px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    box-sizing: border-box;
+}
+div.membership_inventory{
+    flex: 1;
+    overflow: hidden;
+}
+div.memb_subject_bg{
+    width: 100%;
+    height: 395px;
+    position: relative;
+}
+div.membshp_jeju{
+    background-image: url(../img/section/membership/membership-jeju-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+div.membshp_rollingHills{
+    background-image: url(../img/section/membership/membership-rollingHills-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.membshp_suoel{
+    background-image: url(../img/section/membership/membership-suoel-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.memb_type{
+    width: 140px;
+    height: 80px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+div.memb_type img{
+    width: 100%;
+    height: 100%;
+}
+div.hover_opacity_box{
+    width: 70%;
+    height: 70%;
+    background-color: rgba(17, 17, 17, 0.772);
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+div.membership_inventory:hover .hover_opacity_box{
+    opacity: 1;
+    transition: 0.5s;
+}
+.hover_opacity_box ul{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+}
+.hover_opacity_box ul li{
+    margin: 16px 0;
+    text-align: center;
+    font-weight: 700;
+}
+.hover_opacity_box ul li:last-child{
+    font-size: 14px;
+    font-weight: 400;
+}
+.hover_opacity_box ul li span{
+    display: block;
+}
+ul.memb_title{
+    margin: 28px;
+    text-align: center;
+}
+ul.memb_title li:first-child{
+    font-size: 14px;
+    font-weight: 400;
+    color: #116AB0;
+    letter-spacing: -1px;
+}
+ul.memb_title li:last-child{
+    font-size: 28px;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+/*더보기 버튼*/
+div.btn_container{
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+}
+.membership_entire_wrap button.more_btn{
+    width: 140px;
+    height: 43px;
+    line-height: 43px;
+    color: #fff;
+    background: #116AB0;
+    border: none;
+    border-radius: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+    cursor: pointer;
+}
+.membership_entire_wrap button.more_btn:hover{
+    background: transparent;
+    border: 1px solid #116AB0;
+    color: #3C729D;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+/*모먼트 영역*/
+section.moment_entire_wrap{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 120px;
+}
+section.moment_entire_wrap>h1{
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+div.sub_explanat {
+    text-align: center;
+    font-size: 16px;
+    color: #4D4D4D;
+    letter-spacing: -1px;
+    word-spacing: 1px;
+}
+article.frameBox{
+    width: 1420px;
+    padding-top: 42px;
+    margin: 0 auto;
+}
+/*푸터*/
+footer{
+    width: 100%;
+}
+div.link_txt>ul{
+    width: 1334px;
+    margin: 0 auto;
+    padding: 48px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+div.link_txt>ul li a{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4E4E4E;
+}
+div.link_txt li a::after{
+    content: '|';
+    margin-left: 30px;
+    font-weight: 300;
+}
+div.link_txt li:last-child a::after{
+    content: none;
+}
+div.link_txt li.personal_informat a{
+    font-weight: 700;
+}
+div.foot_element_wrap{
+    width: 100%;
+    overflow: hidden;
+    background-color: #EEEEEE;
+}
+div.foot_element_inner{
+    width: 1334px;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+}
+div.search_wrap{
+    width: 52%;
+    padding: 46px 0;
+    float: right;
+}
+.search_wrap span.search_title{
+    width: 30%;
+    padding-top: 2px;
+    display: block;
+    float: left;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+.search_wrap span.search_box{
+    width: 70%;
+    display: block;
+    float: right;
+    position: relative;
+}
+.search_box input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #C8C8C8;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+.search_box button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20%;
+    right: 12px;
+}
+div.foot_icon_wrap{
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #CECECE;
+    position: relative;
+}
+div.logo_container{
+    clear: both;
+    width: 70%;
+    overflow: hidden;
+}
+.logo_container img{
+    position: absolute;
+    top: 0;
+    left: -12%;
+}
+ul.logo_link{
+    width: 54%;
+    overflow: hidden;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+ul.logo_link li a{
+    display: block;
+    width: 136px;
+    height: 50px;
+    margin-right: 10px;
+    float: left;
+}
+div.snsIcon_wrap{
+    width: 30%;
+    float: right;
+}
+.snsIcon_wrap ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.snsIcon_wrap ul li{
+    padding: 35px 0;
+}
+.snsIcon_wrap ul li a{
+    display: block;
+    cursor: pointer;
+}
+.snsIcon_wrap ul li img{
+    width: 80%;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+.snsIcon_wrap ul li a:hover img{
+    opacity: 1;
+}
+div.Company_informat_inner{
+    width: 1334px;
+    padding-top: 30px;
+    margin: 0 auto;
+    color: #6A6A6A;
+}
+.Company_informat ul{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Company_informat ul li{
+    font-size: 14px;
+    color: #6A6A6A;
+}
+.Company_informat ul li::after{
+    content: '|';
+    margin-left: 26px;
+    font-size: 12px;
+}
+.Company_informat ul li:last-child::after{
+    content: none;
+}
+span.copyright{
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+    font-size: 14px;
+}
+/*TOP 버튼*/
+div.window_top_wrap{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 6%;
+    right: 3%;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+div.window_top_wrap img{
+    transition: 0.5s;
+}
+div.window_top_wrap.showTop{   /*스크립트 제어*/
+    opacity: 1;
+}
+
+

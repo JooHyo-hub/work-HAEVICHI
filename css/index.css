@@ -1,0 +1,1240 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+body{
+    font-family: "Noto Sans KR", sans-serif;
+    color: #222;
+}
+/*랜딩 이미지 및 메뉴*/
+div.landing_wrap_box{
+    width: 100%;
+    overflow: hidden;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+}
+div.landing_wrap_box a{
+    color: #fff;
+}
+div.bgImges_element_wrap{
+    width: 100%;
+    max-height: 1100px;
+    height: 100vh;
+    background-image: url(../img/indexPG/main/visual_hub_haevichi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    transition: background-image 0.5s ease;
+}
+/*상단 요소*/
+div.top_element{
+    width: 1150px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+/*언어 선택*/
+div.language_box_wrap{
+    margin-top: 20px;
+    float: left;
+}
+.language_select button{
+    padding-right: 22px;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    background: url(../img/indexPG/main/Expand_down.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+div.language_list{
+    position: relative;
+    width: 100px;
+    display: none;
+}
+div.language_list li{
+    padding: 6px 0;
+    font-size: 14px;
+    text-align: center;
+    background-color: #25252547;
+    cursor: pointer;
+}
+div.language_list li:hover{
+    color: #ccc;
+}
+div.language_list li:first-child{
+    border-bottom: 1px solid #fff;
+}
+/*로그인*/
+.top_element div.login_container{
+    float: right;
+    cursor: pointer;
+}
+/*로고 및 메뉴*/
+div.main_element_wrap{
+    width: 920px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+}
+/*로고*/
+div.main_logo{
+    text-align: center;
+    margin-left: 60px;
+}
+/*메인 메뉴*/
+nav{
+    width: 100%;
+    padding-top: 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+li.main_menu>a{
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+ul.sub_menu{
+    overflow: hidden;
+    margin: 30px 0;
+    box-sizing: border-box;
+}
+ul.sub_menu li {
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 2px 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    position: relative;
+}
+ul.sub_menu li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px; 
+    background-color: #fff; 
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+ul.sub_menu li:hover::before {
+    transform: scaleX(1);
+}
+/*스크립트 제어 스타일*/
+.hidden {
+    opacity: 0;
+    transform: translateY(-40%); /* 위에서 아래로 이동 */
+    transition: opacity 3s ease-out, transform 1s ease; /* 1초 동안 페이드인 및 이동 */
+}
+.visible {
+    opacity: 1; /* 보이게 설정 */
+    transform: translateY(0); /* 원래 위치로 이동 */
+}
+/*스크롤 다운*/
+div.scrollDown_txt{
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*메인*/
+/*서체 클래스 공통 적용*/
+.playfair{
+    font-family: "Playfair", serif;
+}
+.notosans{
+    font-family: "Noto Sans KR", sans-serif;
+}
+/*오퍼 영역*/
+section.offers_entire_wrap{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 120px;
+    position: relative;
+}
+.offers_entire_wrap > h1{
+    margin-bottom: 42px;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+article.list_container{
+    width: 1478px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #eee;
+    box-sizing: border-box;
+}
+div.list_inner_box{
+    width: 200%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+div.offers_list{
+    width: calc(1478px / 3 - 40px);
+    margin: 20px;
+    box-sizing: border-box;
+}
+div.offers_list a{
+    color: #222;
+}
+div.list_NumbType li{
+    margin: 10px 0;
+}
+div.list_NumbType li.numb{
+    font-size: 18px;
+    font-weight: 400;
+    color: #7c7c7c;
+}
+div.list_NumbType li.type{
+    font-size: 14px;
+    font-weight: 400;
+    color: #116AB0;
+    letter-spacing: -1px;
+}
+div.offers_title{
+    margin: 16px 0;
+    font-size: 28px;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+.offers_title span.sign{    /*[] 기호*/
+    font-size: 40px;
+    font-weight: 200;
+}
+.offers_title span.lang_en{
+    font-size: 32px;
+    font-weight: 900;
+}
+div.offers_detail{
+    font-size: 16px;
+    letter-spacing: -1px;
+    color: #4D4D4D;
+}
+.offers_detail span{
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    color: #7C7C7C;
+    letter-spacing: 0;
+}
+div.img_Box{
+    width: 460px;
+    height: 238px;
+}
+div.img_Box img{
+    width: 100%;
+    height: 100%;
+}
+/*좌우 버튼 영역*/
+.offers_entire_wrap button{
+    width: 60px;
+    height: 60px;
+    border: none;
+    position: absolute;
+    top: 60%;
+    cursor: pointer;
+    background: transparent;
+}
+button.offers_leftBtn{
+    left: 30px;
+}
+button.offers_rightBtn{
+    transform: rotate(180deg);
+    right: 30px;
+}
+.offers_entire_wrap button > span{
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #DBDBDB;
+    position: absolute;
+    left: 20%;
+    border-radius: 2px;
+}
+.offers_entire_wrap button:hover span.top{
+    background-color: #116AB0;
+    transition: 0.3s;
+}
+.offers_entire_wrap button:hover span.bottom{
+    background-color: #116AB0;
+    transition: 0.3s;
+}
+.offers_entire_wrap button > span.top{
+    transform: rotate(-45deg);
+    top: 32%;
+}
+.offers_entire_wrap button > span.bottom{
+    transform: rotate(45deg);
+    bottom: 31%;
+}
+/*페이지네이션, 회원가입 영역*/
+.offers_entire_wrap .under_element{
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 0;
+    margin-top: 54px;
+}
+.offers_entire_wrap .pagenation_Wrap{
+    width: 140px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.offers_entire_wrap .pagenation_Wrap span{
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #CFCFCF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.offers_entire_wrap .pagenation_Wrap span.nowList{
+    width: 40px;
+    border-radius: 10px;
+    background-color: #116AB0;
+}
+.offers_entire_wrap .user_join_link{
+    width: 100%;
+    text-align: center;
+}
+.offers_entire_wrap .user_join_link a{
+    display: block;
+    margin-top: 30px;
+    color: #7C7C7C;
+    font-size: 14px;
+    letter-spacing: -1px;
+}
+.offers_entire_wrap .user_join_link a:hover{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    transition: 0.3s;
+}
+/*이벤트 영역*/
+section.event_entire_wrap{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 120px;
+    position: relative;
+}
+.event_entire_wrap > h1{
+    margin-bottom: 42px;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+article.event_inner_box{
+    width: 100%;
+    height: 460px;
+    position: relative;
+}
+div.event_order_wrap{
+    width: 1478px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*좌측 텍스트 영역*/
+div.event_textL_area{
+    width: 50%;
+    height: 460px;
+    overflow: hidden;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+}
+.event_textL_area .type{
+    font-size: 14px;
+    font-weight: 400;
+    color: #116AB0;
+    letter-spacing: -1px;
+}
+.event_textL_area .title a{
+    display: block;
+    margin: 16px 0;
+    color: #222;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+.event_textL_area .title span.sign{
+    font-size: 40px;
+    font-weight: 200;
+}
+.event_textL_area .title span.lang_en{
+    font-size: 32px;
+    font-weight: 900;
+}
+.event_textL_area ul.detail a{
+    color: #4D4D4D;
+}
+.event_textL_area .detail a li{
+    margin: 4px 0;
+}
+.event_textL_area .detail a li:first-child{
+    margin: 12px 0;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+.event_textL_area .detail li.informat_list{
+    list-style-position: inside;
+    list-style-type: disc;
+    font-size: 12px;
+}
+.event_textL_area .detail li.informat_list span{
+    font-size: 16px;
+}
+ul.add_event_list{
+    width: 200px;
+    padding: 10px 0;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    position: relative;
+    top: 30px;
+}
+.add_event_list li{
+    margin: 10px 0;
+}
+.add_event_list li a{
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+}
+.add_event_list li a:hover{
+    color: #c0c0c0;
+}
+.add_event_list li span.sign{
+    font-size: 20px;
+}
+.add_event_list>span.more_dot{
+    display: block;
+    width: 2px;
+    height: 2px;
+    margin: 14px auto;
+    background-color: #fff;
+    border-radius: 50%;
+}
+/*우측 이미지 영역*/
+div.event_imgR_area{
+    width: 50%;
+    height: 420px;
+    overflow: hidden;
+    float: left;
+}
+div.event_imgR_area img{
+    width: 100%;
+    height: 100%;
+}
+/*더보기 버튼*/
+.event_inner_box button.more_btn{
+    width: 140px;
+    padding: 12px 0;
+    color: #3C729D;
+    background-color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+    cursor: pointer;
+    position: absolute;
+    left: 35%;
+    bottom: 10%;
+}
+.event_inner_box button.more_btn:hover{
+    background-color: #116AB0;
+    color: #fff;
+    transition: 0.3s;
+}
+/*백그라운드 컬러 영역*/
+div.event_back_color{
+    width: 100%;
+    height: 235px;
+    background-color: #334a5e;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+/*멤버십 영역*/
+section.membership_entire_wrap{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 120px;
+}
+section.membership_entire_wrap > h1{
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+div.sub_explanat{
+    text-align: center;
+    font-size: 16px;
+    color: #4D4D4D;
+    letter-spacing: -1px;
+    word-spacing: 1px;
+}
+/*멤버십 랩핑*/
+article.membership_wrap{
+    width: 1352px;
+    margin: 0 auto;
+    padding-top: 42px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    box-sizing: border-box;
+}
+div.membership_inventory{
+    flex: 1;
+    overflow: hidden;
+}
+div.memb_subject_bg{
+    width: 100%;
+    height: 395px;
+    position: relative;
+}
+div.membshp_jeju{
+    background-image: url(../img/section/membership/membership-jeju-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+div.membshp_rollingHills{
+    background-image: url(../img/section/membership/membership-rollingHills-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.membshp_suoel{
+    background-image: url(../img/section/membership/membership-suoel-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+div.memb_type{
+    width: 140px;
+    height: 80px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+div.memb_type img{
+    width: 100%;
+    height: 100%;
+}
+div.hover_opacity_box{
+    width: 70%;
+    height: 70%;
+    background-color: rgba(17, 17, 17, 0.772);
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+div.membership_inventory:hover .hover_opacity_box{
+    opacity: 1;
+    transition: 0.5s;
+}
+.hover_opacity_box ul{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+}
+.hover_opacity_box ul li{
+    margin: 16px 0;
+    text-align: center;
+    font-weight: 700;
+}
+.hover_opacity_box ul li:last-child{
+    font-size: 14px;
+    font-weight: 400;
+}
+.hover_opacity_box ul li span{
+    display: block;
+}
+ul.memb_title{
+    margin: 28px;
+    text-align: center;
+}
+ul.memb_title li:first-child{
+    font-size: 14px;
+    font-weight: 400;
+    color: #116AB0;
+    letter-spacing: -1px;
+}
+ul.memb_title li:last-child{
+    font-size: 28px;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+/*더보기 버튼*/
+div.btn_container{
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+}
+.membership_entire_wrap button.more_btn{
+    width: 140px;
+    height: 43px;
+    line-height: 43px;
+    color: #fff;
+    background-color: #116AB0;
+    border: none;
+    border-radius: 30px;
+    font-family: "Noto Sans KR", sans-serif;
+    cursor: pointer;
+}
+.membership_entire_wrap button.more_btn:hover{
+    background: transparent;
+    border: 1px solid #116AB0;
+    color: #3C729D;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+/*호텔 스토리 영역*/
+section.brand_entire_wrap{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 120px;
+}
+section.brand_entire_wrap > h1{
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+article.content_area{
+    width: 1000px;
+    padding-top: 42px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+/*컨텐츠 상단*/
+div.content_top{
+    width: 100%;
+    background-color: #fff;
+    letter-spacing: -1px;
+}
+.content_top>.img_box{
+    width: 50%;
+    height: 570px;
+    float: left;
+}
+.content_top>.img_box img{
+    width: 100%;
+    height: 100%;
+}
+div.txt_box{
+    width: 50%;
+    height: 570px;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+}
+div.clash_box{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.content_area ul li:first-child{
+    font-size: 32px;
+    font-weight: 300;
+}
+.content_area ul li:last-child{
+    font-size: 20px;
+    font-weight: 400;
+}
+div.top_detail{
+    margin: 60px 0;
+    line-height: 30px;
+    font-size: 16px;
+    color: #4D4D4D;
+}
+/*컨텐츠 하단*/
+div.content_bt{
+    width: 100%;
+    overflow: hidden;
+    padding: 80px 0;
+    clear: both;
+}
+.content_bt>.img_box{
+    width: 50%;
+    height: 570px;
+    float: right;
+}
+.content_bt>.img_box img{
+    width: 100%;
+    height: 100%;
+}
+.content_bt div.txt_box{
+    float: left;
+}
+.content_bt .clash_box{
+    left: 0%;
+}
+/*해변 이미지*/
+article.beach_photo{
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+}
+.beach_photo div{
+    overflow: hidden;
+    position: relative;
+}
+.beach_photo img{
+    width: 100%;
+}
+.beach_photo ul.tumonBeach_descript{
+    position: absolute;
+    top: 50%;
+    right: 22%;
+    transform: translateY(-50%);
+    color: #fff;
+}
+ul.tumonBeach_descript li:first-child{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 34px;
+}
+.tumonBeach_descript li:nth-child(2){
+    font-size: 20px;
+    font-weight: 400;
+}
+.tumonBeach_descript li.bar span{
+    display: block;
+    width: 50px;
+    height: 4px;
+    margin: 30px 0;
+    background-color: #fff;
+}
+.tumonBeach_descript li:last-child{
+    font-size: 16px;
+    line-height: 30px;
+}
+.tumonBeach_descript li:last-child span{
+    display: block;
+    margin: 30px 0;
+}
+/*모먼트 영역*/
+section.moment_entire_wrap{
+    width: 100%;
+    overflow: hidden;
+    padding-top: 120px;
+}
+section.moment_entire_wrap>h1{
+    margin-bottom: 16px;
+    text-align: center;
+    font-size: 54px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+div.sub_explanat {
+    text-align: center;
+    font-size: 16px;
+    color: #4D4D4D;
+    letter-spacing: -1px;
+    word-spacing: 1px;
+}
+article.frameBox{
+    width: 1420px;
+    padding-top: 42px;
+    margin: 0 auto;
+}
+/*푸터*/
+footer{
+    width: 100%;
+}
+div.link_txt>ul{
+    width: 1334px;
+    margin: 0 auto;
+    padding: 48px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+div.link_txt>ul li a{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4E4E4E;
+}
+div.link_txt li a::after{
+    content: '|';
+    margin-left: 30px;
+    font-weight: 300;
+}
+div.link_txt li:last-child a::after{
+    content: none;
+}
+div.link_txt li.personal_informat a{
+    font-weight: 700;
+}
+div.foot_element_wrap{
+    width: 100%;
+    overflow: hidden;
+    background-color: #EEEEEE;
+}
+div.foot_element_inner{
+    width: 1334px;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+}
+div.search_wrap{
+    width: 52%;
+    padding: 46px 0;
+    float: right;
+}
+.search_wrap span.search_title{
+    width: 30%;
+    padding-top: 2px;
+    display: block;
+    float: left;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+.search_wrap span.search_box{
+    width: 70%;
+    display: block;
+    float: right;
+    position: relative;
+}
+.search_box input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #C8C8C8;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+.search_box button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20%;
+    right: 12px;
+}
+div.foot_icon_wrap{
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #CECECE;
+    position: relative;
+}
+div.logo_container{
+    clear: both;
+    width: 70%;
+    overflow: hidden;
+}
+.logo_container img{
+    position: absolute;
+    top: 0;
+    left: -12%;
+}
+ul.logo_link{
+    width: 54%;
+    overflow: hidden;
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+ul.logo_link li a{
+    display: block;
+    width: 136px;
+    height: 50px;
+    margin-right: 10px;
+    float: left;
+}
+div.snsIcon_wrap{
+    width: 30%;
+    float: right;
+}
+.snsIcon_wrap ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.snsIcon_wrap ul li{
+    padding: 35px 0;
+}
+.snsIcon_wrap ul li a{
+    display: block;
+    cursor: pointer;
+}
+.snsIcon_wrap ul li img{
+    width: 80%;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+.snsIcon_wrap ul li a:hover img{
+    opacity: 1;
+}
+div.Company_informat_inner{
+    width: 1334px;
+    padding-top: 30px;
+    margin: 0 auto;
+    color: #6A6A6A;
+}
+.Company_informat ul{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.Company_informat ul li{
+    font-size: 14px;
+    color: #6A6A6A;
+}
+.Company_informat ul li::after{
+    content: '|';
+    margin-left: 26px;
+    font-size: 12px;
+}
+.Company_informat ul li:last-child::after{
+    content: none;
+}
+span.copyright{
+    display: block;
+    width: 100%;
+    margin: 30px 0;
+    font-size: 14px;
+}
+/*예약 영역*/
+div.reservatn_calendar{
+    position: fixed;
+    top: 10%;
+    right: 2%;
+    opacity: 0; 
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    cursor: pointer;
+    z-index: 10;
+}
+div.reservatn_calendar.show {   /*스트립트 제어*/
+    opacity: 1;
+}
+/*닫기 아이콘*/
+div.close_icon{
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 9;
+    display: none;
+}
+div.close_icon:hover img{
+    transform: rotate(360deg);
+    transition: all 0.5s ease-in-out;
+}
+/*예약 검색 랩핑*/
+div.reservatn_Wrap{
+    width: 100%;
+    background-color: #22222293;
+    position: relative;
+}
+div.container{
+    float: right;
+}
+/*예약 검색창*/
+div.search_list_map{
+    width: 380px;
+    overflow: hidden;
+    padding: 0 20px;
+    padding-top: 185px;
+    padding-bottom: 30px;
+    background-color: #181f2f;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+/*타이틀 및 호텔/리조트 선택*/
+div.rooms_out_box{
+    width: 90%;
+    overflow: hidden;
+    position: absolute;
+    top: 66px;
+    left: 21px;
+}
+div.rooms_out_box h1{
+    padding-bottom: 36px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+div.select_room_type_wrap{
+    width: 100%;
+    text-align: center;
+}
+.select_room_type_wrap ul>li{
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    font-size: 14px;
+}
+.select_room_type_wrap ul.select_room_type>li{
+    border-radius: 6px;
+    position: relative;
+}
+.select_room_type_wrap ul>li span.title{
+    display: block;
+    padding: 10px 0;
+    letter-spacing: -1px;
+    font-size: 16px;
+}
+span.down_icon{
+    position: absolute;
+    top: 10px;
+    right: 12px;
+}
+.select_room_type_wrap ul.room_list{
+    display: none;
+}
+.select_room_type_wrap ul.room_list li{
+    padding: 10px 0;
+    background-color: #212e4ef5;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.select_room_type_wrap ul.room_list li:last-child{
+    border: none;
+}
+.select_room_type_wrap ul.room_list li:hover{
+    background-color: #1a1a1a;
+    transition: 0.3s;
+}
+/*날짜 선택*/
+div.select_date{
+    width: 100%;
+    padding: 40px 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+.select_date>div.title{
+    font-size: 16px;
+}
+div.select_date_wrap{
+    width: 99%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 16px;
+    box-sizing: border-box;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.select_date_wrap span{
+    font-size: 14px;
+}
+span.days{
+    float: right;
+    margin: 2px 30px;
+}
+span.day_icon_box{
+    margin: 1px 0;
+    float: right;
+}
+/*인원 선택*/
+div.select_personnel{
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+}
+/*성인 랩핑*/
+div.adult_left{
+    width: 48%;
+    float: left;
+}
+/*어린이 랩핑*/
+div.children_right{
+    width: 48%;
+    float: right;
+}
+/*성인, 어린이 공통 스타일*/
+div.personnel_count_wrap{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 16px;
+    text-align: center;
+}
+span.personnel_remove_icon{
+    float: left;
+    cursor: pointer;
+    margin-top: -2px;
+}
+span.personnel_add_icon{
+    float: right;
+    cursor: pointer;
+    margin-top: -2px;
+}
+/*객실 추가 및 검색*/
+div.select_add_room{
+    padding: 22px 0;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+.select_add_room span{
+    display: block;
+}
+span.Search_btn{
+    width: 100%;
+    overflow: hidden;
+    padding: 12px 0;
+    margin-top: 34px;
+    background-color: #116AB0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+/*체크인 날짜 달력*/
+div.checkinDay{
+    width: 800px;
+    overflow: hidden;
+    background-color: #f3f3f3;
+    position: absolute;
+    top: 0;
+    right: 420px;
+}
+/*달력 닫기*/
+div.calendar_close{
+    width: 28px;
+    float: right;
+    margin-top: 16px;
+    margin-right: 16px;
+    cursor: pointer;
+    display: none;
+}
+/*현재 달*/
+div.now_month{
+    width: 50%;
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 49px;
+    float: left;
+    box-sizing: border-box;
+}
+/*다음 달*/
+div.next_month{
+    width: 50%;
+    overflow: hidden;
+    padding: 20px;
+    float: left;
+    box-sizing: border-box;
+}
+/*현재 달, 다음 달 공통 스타일*/
+div.month_wrap{
+    display: none;
+    transition: transform 0.3s ease;
+}
+div.month_wrap h1{
+    text-align: center;
+    font-size: 16px;
+}
+div.month_wrap h1 span{
+    float: right;
+}
+div.day{
+    margin-top: 16px;
+    border-top: 1px solid #CFCFCF;
+}
+ul.week{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+ul.week li{
+    width: calc(100% / 7);
+    padding: 12px 0;
+    text-align: center;
+    font-size: 16px;
+}
+div.dayBYday{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap; 
+}
+div.dayBYday ul{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.dayBYday ul li{
+    width: calc(100% / 7);
+    padding: 12px;
+    text-align: center;
+    font-size: 15px;
+}
+li.dayOff{
+    color: #FF3A3A;
+}
+li.Lightly{
+    opacity: 0.3;
+}
+li.today{
+    background-color: #111;
+    color: #fff;
+}
+/*TOP 버튼*/
+div.window_top_wrap{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    bottom: 6%;
+    right: 3%;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+div.window_top_wrap img{
+    transition: 0.5s;
+}
+div.window_top_wrap.showTop{   /*스크립트 제어*/
+    opacity: 1;
+}
+
+

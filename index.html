@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--font: Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!--font: Noto Sans KR-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <!--font: playfair-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <title>HAEVICHI</title>
+    <!--CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--css-->
+    <link rel="stylesheet" href="css/index.css">
+    <!--js-->
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <!--랜딩 이미지 및 메뉴-->
+    <div class="landing_wrap_box">
+        <!--메인 백그라운드 이미지-->
+        <div class="bgImges_element_wrap">
+            <!--상단 요소-->
+            <div class="top_element">
+                <!--언어 선택-->
+                <div class="language_box_wrap">
+                    <div class="language_select">
+                        <button type="button" class="lang_select_btn" title="언어선택">LANGUAGE</button><!--after arrow-icon-->
+                    </div>
+                    <div class="language_list"><!--안보이게 처리-->
+                        <ul>
+                            <li>ENG</li>
+                            <li>KOR</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--로그인-->
+                <div class="login_container">
+                    <img src="img/indexPG/main/User_cicrle_light.svg" alt="유저 계정">
+                </div>
+            </div>
+            <!--메인 로고 및 메뉴-->
+            <div class="main_element_wrap">
+                <!--로고-->
+                <div class="main_logo hidden">
+                    <a href="#">
+                        <img src="img/indexPG/main/logo_white.png" alt="해비치 메인 로고">
+                    </a>
+                </div>
+                <!--메인 메뉴-->
+                <nav class="nav_hidden hidden">
+                    <ul class="nav_list rooms">
+                        <li class="main_menu">
+                            <a href="rooms.html">HOTEL & RESORT</a>
+                            <ul class="sub_menu">
+                                <li>
+                                    <a href="rooms.html">HAEVICH HOTEL& RESORT</a>
+                                </li>
+                                <li>
+                                    <a href="rooms.html">ROLLINGHILLS HOTEL</a>
+                                </li>
+                                <li>
+                                    <a href="rooms.html">LE MERIDIEN & MOXY SEOUL</a>
+                                </li>
+                                <li>
+                                    <a href="rooms.html">WESTIN RESORT GUAM</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav_list country_club">
+                        <li class="main_menu">
+                            <a href="#">COUNTRY CLUB</a>
+                            <ul class="sub_menu">
+                                <li>
+                                    <a href="#">COUNTRY CLUB JEJU</a>
+                                </li>
+                                <li>
+                                    <a href="#">COUNTRY CLUB SEOUL</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav_list restaurant">
+                        <li class="main_menu">
+                            <a href="#">RESTAURANT</a>
+                            <ul class="sub_menu">
+                                <li>
+                                    <a href="#">MICHA’S BY HAEVICHI</a>
+                                </li>
+                                <li>
+                                    <a href="#">SOOWOON</a>
+                                </li>
+                                <li>
+                                    <a href="#">JUNGSIM</a>
+                                </li>
+                                <li>
+                                    <a href="#">SUSHI MER</a>
+                                </li>
+                                <li>
+                                    <a href="#">SPATULA</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!--스크롤 다운-->
+            <div class="scrollDown_txt">SCROLL DOWN</div>
+        </div>
+    </div>
+    <main>
+        <!--오퍼 영역-->
+        <section class="offers_entire_wrap">
+            <h1 class="playfair">OFFERS</h1>
+            <article class="list_container"><!--리스트 보여지는 영역 랩핑 박스-->
+                <div class="list_inner_box">
+                    <div class="offers_list list-1">
+                        <a href="#">
+                            <div class="list_NumbType">
+                                <ul>
+                                    <li class="numb">01</li>
+                                    <li class="type">HAEVICHI HOTEL JEJU</li>
+                                </ul>
+                            </div>
+                            <div class="offers_title">
+                                <span class="playfair sign">[</span>홈페이지 회원 전용<span class="playfair sign">]</span>
+                                <span class="playfair lang_en">Members Only</span>
+                            </div>
+                            <div class="offers_detail">
+                                객실 3만원 할인 + 연박시 7% 추가 할인
+                                <span>2024.10.01 ~ 2025.02.28</span>
+                            </div>
+                            <div class="img_Box">
+                                <img src="img/indexPG/offers/offers-list-1.db" alt="스페셜오퍼 리스트1">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="offers_list list-2">
+                        <a href="#">
+                            <div class="list_NumbType">
+                                <ul>
+                                    <li class="numb">02</li>
+                                    <li class="type">HAEVICHI RESORT JEJU</li>
+                                </ul>
+                            </div>
+                            <div class="offers_title">
+                                <span class="playfair lang_en">Bed <span class="notosans">&</span>
+                                <span class="playfair lang_en">Breakfast</span>
+                            </div>
+                            <div class="offers_detail">
+                                조식 + 수영장 + 웰니스프로그램
+                                <span>2024.10.01 ~ 2025.02.28</span>
+                            </div>
+                            <div class="img_Box">
+                                <img src="img/indexPG/offers/offers-list-2.db" alt="스페셜오퍼 리스트2">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="offers_list list-3">
+                        <a href="#">
+                            <div class="list_NumbType">
+                                <ul>
+                                    <li class="numb">03</li>
+                                    <li class="type">HAEVICHI HOTEL JEJU</li>
+                                </ul>
+                            </div>
+                            <div class="offers_title">
+                                <span class="playfair sign">[</span>디너 1 + 1<span class="playfair sign">]</span>
+                                <span class="playfair lang_en">Tasty Choice</span>
+                            </div>
+                            <div class="offers_detail">
+                                [옵션A] 스시 오마카세 1+1
+                                <span>2024.10.01 ~ 2024.12.31 (수~일요일 투숙)</span>
+                            </div>
+                            <div class="img_Box">
+                                <img src="img/indexPG/offers/offers-list-3.db" alt="스페셜오퍼 리스트3">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="offers_list list-4"><!--디테일 내용 바꾸기-->
+                        <a href="#">
+                            <div class="list_NumbType">
+                                <ul>
+                                    <li class="numb">04</li>
+                                    <li class="type">HAEVICHI RESORT JEJU</li>
+                                </ul>
+                            </div>
+                            <div class="offers_title">
+                                <span class="playfair sign">[</span>홈페이지 회원 전용<span class="playfair sign">]</span>
+                                <span class="playfair lang_en">Members Only</span>
+                            </div>
+                            <div class="offers_detail">
+                                객실 3만원 할인 + 연박시 7% 추가 할인
+                                <span>2024.10.01 ~ 2025.02.28</span>
+                            </div>
+                            <div class="img_Box">
+                                <img src="img/indexPG/offers/offers-list-4.db" alt="스페셜오퍼 리스트4">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="offers_list list-5">
+                        <a href="#">
+                            <div class="list_NumbType">
+                                <ul>
+                                    <li class="numb">05</li>
+                                    <li class="type">HAEVICHI RESORT JEJU</li>
+                                </ul>
+                            </div>
+                            <div class="offers_title">
+                                <span class="playfair sign">[</span>웰니스관광지 인증 기념<span class="playfair sign">]</span>
+                                <span class="playfair lang_en">Wellness...</span>
+                            </div>
+                            <div class="offers_detail">
+                                조식 + 수영장 + 웰니스프로그램
+                                <span>2024.10.01 ~ 2025.02.28</span>
+                            </div>
+                            <div class="img_Box">
+                                <img src="img/indexPG/offers/offers-list-5.db" alt="스페셜오퍼 리스트5">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="offers_list list-6">
+                        <a href="#">
+                            <div class="list_NumbType">
+                                <ul>
+                                    <li class="numb">06</li>
+                                    <li class="type">HAEVICHI RESORT JEJU</li>
+                                </ul>
+                            </div>
+                            <div class="offers_title">
+                                <span class="playfair">Private Relax</span>
+                            </div>
+                            <div class="offers_detail">
+                                웰컴티 + 모루라운지 + 수영장 + 웰니스프로그램
+                                <span>2024.10.01 ~ 2025.02.28</span>
+                            </div>
+                            <div class="img_Box">
+                                <img src="img/indexPG/offers/offers-list-6.db" alt="스페셜오퍼 리스트6">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </article>
+            <!--좌우 버튼 영역-->
+            <button class="offers_leftBtn">
+                <span class="top"></span>
+                <span class="bottom"></span>
+            </button>
+            <button class="offers_rightBtn">
+                <span class="top"></span>
+                <span class="bottom"></span>
+            </button>
+            <!--페이지네이션, 회원가입 영역-->
+            <div class="under_element">
+                <div class="pagenation_Wrap">
+                    <span class="page nowList"></span>
+                    <span class="page"></span>
+                    <span class="page"></span>
+                    <span class="page"></span>
+                </div>
+                <div class="user_join_link">
+                    <a href="#">회원가입 바로가기</a>
+                </div>
+            </div>
+        </section>
+        <!--이벤트 영역-->
+        <section class="event_entire_wrap">
+            <h1 class="playfair">EVENT</h1>
+            <article class="event_inner_box">
+                <!--이벤트 1-->
+                <div class="event_order_wrap event_list1">
+                    <!--좌측 텍스트 영역-->
+                    <div class="event_textL_area">
+                        <div class="type">HAEVICHI HOTEL JEJU</div>
+                        <div class="title">
+                            <a href="">
+                                <span class="playfair sign">[</span><span class="playfair lang_en">Bar99</span><span class="playfair sign">]</span>
+                                와인 프로모션
+                            </a>
+                        </div>
+                        <ul class="detail">
+                            <a href="#">
+                                <li>해비치 소믈리에가 엄선한 프랑스&미국 와인과 함께 제주 밤바다를 즐겨보세요.</li>
+                                <li class="informat_list">
+                                    <span>기간 : 2024.10.01 ~ 2025.02.28</span>
+                                </li>
+                                <li class="informat_list">
+                                    <span>장소 : Bar99 (호텔1F)</span>
+                                </li>
+                                <li class="informat_list">
+                                    <span>가격 : KRW 88,000 ~</span>
+                                </li>
+                            </a>
+                            
+                        </ul>
+                        <ul class="add_event_list">
+                            <li>
+                                <a href="#">해비치 빈</a>
+                            </li>
+                            <li>
+                                <a href="#">해비치 컬렉션</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="playfair sign">[</span>밀리우<span class="playfair sign">]</span>
+                                    쥬뗌므 커플 코스
+                                </a>
+                            </li>
+                            <span class="more_dot"></span>
+                            <span class="more_dot"></span>
+                            <span class="more_dot"></span>
+                        </ul>
+                    </div>
+                    <!--우측 이미지 영역-->
+                    <div class="event_imgR_area">
+                        <a href="#">
+                            <img src="img/section/event/event-list-1-mini.jpg" alt="와인 프로모션">
+                        </a>
+                    </div>
+                </div>
+                <!--이벤트 2-->
+                <div class="event_order_wrap event_list2">
+                    <!--좌측 텍스트 영역-->
+                    <div class="event_textL_area">
+                        <div class="type">HAEVICHI HOTEL JEJU</div>
+                        <div class="title">
+                            <a href="">해비치 빈</a>
+                        </div>
+                        <ul class="detail">
+                            <a href="#">
+                                <li>해비치가 자체 블렌딩한 '해비치 빈'의 풍미를 집에서도 느껴보세요.</li>
+                                <li class="informat_list">
+                                    <span>기간 : 2024.01.01 ~ 2024.12.31</span>
+                                </li>
+                                <li class="informat_list">
+                                    <span>장소 : 현장 구매 및 택배 배송 (배송비 별도)</span>
+                                </li>
+                                <li class="informat_list">
+                                    <span>가격 : KRW 14,000~</span>
+                                </li>
+                            </a>
+                            
+                        </ul>
+                        <ul class="add_event_list">
+                            <li>
+                                <a href="#">해비치 컬렉션</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="playfair sign">[</span>밀리우<span class="playfair sign">]</span>
+                                    쥬뗌므 커플 코스
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="playfair sign">[</span><span class="playfair lang_en">Bar99</span><span class="playfair sign">]</span>
+                                    와인 프로모션
+                                </a>
+                            </li>
+                            <span class="more_dot"></span>
+                            <span class="more_dot"></span>
+                            <span class="more_dot"></span>
+                        </ul>
+                    </div>
+                    <!--우측 이미지 영역-->
+                    <div class="event_imgR_area">
+                        <a href="#">
+                            <img src="img/section/event/event-list-2-mini.jpg" alt="해비치 빈">
+                        </a>
+                    </div>
+                </div>
+                <!--이벤트 3-->
+                <div class="event_order_wrap event_list3">
+                    <!--좌측 텍스트 영역-->
+                    <div class="event_textL_area">
+                        <div class="type">HAEVICHI HOTEL JEJU</div>
+                        <div class="title">
+                            <a href="">해비치 컬렉션</a>
+                        </div>
+                        <ul class="detail">
+                            <a href="#">
+                                <li>마음까지 포근해지는 해비치의 편안함을 집에서도 느껴보세요.</li>
+                                <li class="informat_list">
+                                    <span>기간 : 2023.01.01 ~ 2024.12.31</span>
+                                </li>
+                                <li class="informat_list">
+                                    <span>장소 : 현장 구매 및 택배 배송 (배송비 별도)</span>
+                                </li>
+                                <li class="informat_list">
+                                    <span>가격 : KRW 14,000~</span>
+                                </li>
+                            </a>
+                            
+                        </ul>
+                        <ul class="add_event_list">
+                            <li>
+                                <a href="#">
+                                    <span class="playfair sign">[</span>밀리우<span class="playfair sign">]</span>
+                                    쥬뗌므 커플 코스
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="playfair sign">[</span><span class="playfair lang_en">Bar99</span><span class="playfair sign">]</span>
+                                    와인 프로모션
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">해비치 빈</a>
+                            </li>
+                            <span class="more_dot"></span>
+                            <span class="more_dot"></span>
+                            <span class="more_dot"></span>
+                        </ul>
+                    </div>
+                    <!--우측 이미지 영역-->
+                    <div class="event_imgR_area">
+                        <a href="#">
+                            <img src="img/section/event/event-list-3-mini.jpg" alt="해비치 컬렉션">
+                        </a>
+                    </div>
+                </div>
+                <!--더보기 버튼-->
+                <button class="more_btn">VIEW MORE</button>
+            </article>
+            <!--백그라운드 컬러 영역-->
+            <div class="event_back_color"></div>
+        </section>
+        <!--멤버십 영역-->
+        <section class="membership_entire_wrap">
+            <h1 class="playfair">MEMBERSHIP</h1>
+            <div class="sub_explanat">
+                해비치에서 자유롭게 이용 가능한 통합 유료 멤버십, 새롭게 선보이는 멤버십으로
+                <span>객실과 다이닝을 더욱 편리하고 여유롭게 이용해보세요!</span>
+            </div>
+            <!--멤버십 랩핑-->
+            <article class="membership_wrap">
+                <!--멤버십 목록1-->
+                <div class="membership_inventory">
+                    <a href="#">
+                        <div class="memb_subject_bg membshp_jeju"><!--백그라운드-->
+                            <div class="memb_type">
+                                <img src="img/section/membership/membership-jeju.db" alt="해비치 제주">
+                            </div>
+                            <div class="hover_opacity_box">
+                                <ul>
+                                    <li>KRW 500,000</li>
+                                    <li>
+                                        숙박+조식+객실 주중 30% 할인
+                                        <span>멤버십 회원만을 위한 특전</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="memb_title">
+                            <li>HAEVICHI HOTEL & JEJU</li>
+                            <li>해비치 제주 멤버십</li>
+                        </ul>
+                    </a>
+                </div>
+                <!--멤버십 목록2-->
+                <div class="membership_inventory">
+                    <a href="#">
+                        <div class="memb_subject_bg membshp_rollingHills"><!--백그라운드-->
+                            <div class="memb_type">
+                                <img src="img/section/membership/membership-rollingHills.db" alt="롤링힐스 다이닝">
+                            </div>
+                            <div class="hover_opacity_box">
+                                <ul>
+                                    <li>KRW 420,000</li>
+                                    <li>
+                                        블루 사파이어,더 키친, 더 라운지,
+                                        <span>더 바에서 즐거운 시간을 보내세요.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="memb_title">
+                            <li>HAEVICHI HOTEL & JEJU</li>
+                            <li>롤링힐스 다이닝 멤버십</li>
+                        </ul>
+                    </a>
+                </div>
+                <!--멤버십 목록3-->
+                <div class="membership_inventory">
+                    <a href="#">
+                        <div class="memb_subject_bg membshp_suoel"><!--백그라운드-->
+                            <div class="memb_type">
+                                <img src="img/section/membership/membership-suoel.db" alt="다이닝 서울">
+                            </div>
+                            <div class="hover_opacity_box">
+                                <ul>
+                                    <li>KRW 700,000</li>
+                                    <li>
+                                        <span>뉴 아메리칸 다이닝, 정통 차이니즈 , 한식</span>
+                                        <span>파인다이닝, 스시 오마카세 까지 해비치</span>
+                                        <span>다이닝 식음권+할인 특전을 누리세요.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="memb_title">
+                            <li>HAEVICHI HOTEL & JEJU</li>
+                            <li>다이닝 서울 멤버십</li>
+                        </ul>
+                    </a>
+                </div>
+            </article>
+            <!--더보기 버튼-->
+            <div class="btn_container">
+                <button class="more_btn">VIEW MORE</button>
+            </div>
+        </section>
+        <!--호텔 스토리 영역-->
+        <section class="brand_entire_wrap">
+            <h1 class="playfair">HOTEL STORY</h1>
+            <article class="content_area">
+                <!--컨텐츠 상단-->
+                <div class="content_top">
+                    <div class="img_box">
+                        <img src="img/indexPG/hotel-story/bg_intro_01_correct.jpg" alt="서서히 확장되는 깊은 경험">
+                    </div>
+                    <div class="txt_box">
+                        <div class="clash_box">
+                            <ul>
+                                <li class="playfair">Ever Enriching Experience</li>
+                                <li>서서히 확장되는 깊은 경험</li>
+                            </ul>
+                            <div class="top_detail">
+                                해비치의 모든 브랜드 경험은 점진적이고<br>
+                                연결성 있게 구성됩니다.<br>
+                                한 번의 큰 자극으로 끝나는 경험이 아닌<br>
+                                고객의 맥락과 정황에 맞춘 접근을 통해,<br>
+                                우리 고객은 부드럽고 자연스럽게<br>
+                                해비치의 전문성과 진정성을 체험할 수 있습니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--컨텐츠 하단-->
+                <div class="content_bt">
+                    <div class="img_box">
+                        <img src="img/indexPG/hotel-story/bg_intro_glass.jpg" alt="한발짝 다가간 만남">
+                    </div>
+                    <div class="txt_box">
+                        <div class="clash_box">
+                            <ul>
+                                <li class="playfair">A step closer</li>
+                                <li>한발짝 다가간 만남</li>
+                            </ul>
+                            <div class="top_detail">
+                                좀 더 많은 분들께서 해비치 브랜드를<br>
+                                경험하실 수 있도록 노력합니다.<br>
+                                일상 속 여행을 떠난 것 같은 즐거움과 기대를 선사하는<br>
+                                공간에서 여러분을 맞이하겠습니다.<br>
+                                또한 해비치의 블렌딩 원두 ‘해비치 빈’과 시그니처 수제 맥주 ‘해비치<br>
+                                위트비어’, 해비치만의 브랜드 향을 담은 스파 어메니티 등을 통해 라이프<br>
+                                스타일 속에서도 해비치를  만나실 수 있습니다.
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </article>
+            <!--해변 이미지-->
+            <article class="beach_photo">
+                <div>
+                    <img src="img/indexPG/hotel-story/bg_intro_beach.jpg" alt="해비치 해변 이미지">
+                    <ul class="tumonBeach_descript">
+                        <li>Pacific sunshine<br>at Tumon Beach</li>
+                        <li>투몬비치에서 빛나는 햇살</li>
+                        <li class="bar">
+                            <span></span>
+                        </li>
+                        <li>
+                            해비치는 2017년 웨스틴 리조트 괌의 운영을 맡아<br>
+                            글로벌 호스피탈리티 기업의 면모를 강화했습니다.<br>
+                            <span>
+                                최고의 품격과 여유를 만끽할 수 있도록<br>
+                                해비치만의 고품격 서비스와 차별화된 가치를 바탕으로,<br>
+                                전 세계의 여행자들에게 웨스틴 리조트 괌을 소개하고 있습니다.<br>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <!--모먼트 영역-->
+        <section class="moment_entire_wrap">
+            <h1 class="playfair"> MOMENT</h1>
+            <div class="sub_explanat">
+                제주 자연이 기른 건강한 재료로 차려낸 에너지 가득한 해비치의 식탁을 만나보세요.
+            </div>
+            <article class="frameBox">
+                <iframe width="100%" height="585" src="https://www.youtube.com/embed/lkHJfntuEeA" title="해비치호텔&amp;리조트의 이노베이티브 퀴진랩, 스패출러ㅣHaevichi hotel&amp;resort&#39;s culinary  R&amp;D center, Spatula by haevichi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </article>
+        </section>
+    </main>
+    <!--푸터 영역-->
+    <footer>
+        <div class="all_wrap">
+            <div class="link_txt">
+                <ul>
+                    <li>
+                        <a href="#">해비치소개</a>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                    </li>
+                    <li>
+                        <a href="#">회원권</a>
+                    </li>
+                    <li>
+                        <a href="#">오시는 길</a>
+                    </li>
+                    <li>
+                        <a href="#">인재채용</a>
+                    </li>
+                    <li>
+                        <a href="#">사이트 맵</a>
+                    </li>
+                    <li>
+                        <a href="#">해비치약관</a>
+                    </li>
+                    <li>
+                        <a href="#">해비치 멤버십약관</a>
+                    </li>
+                    <li class="personal_informat">
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">이메일무단수집금지</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="foot_element_wrap">
+                <div class="foot_element_inner">
+                    <div class="search_wrap">
+                        <span class="playfair search_title">Subxcribe Now</span>
+                        <span class="search_box">
+                            <input type="text" placeholder="Your Email">
+                            <button>
+                                <img src="img/footer/arrow-right.svg" alt="next_icon">
+                            </button>
+                        </span>
+                    </div>
+                    <div class="foot_icon_wrap">
+                        <div class="logo_container">
+                            <img src="img/footer/img_family_logo.png" alt="패밀리 로고 이미지">
+                            <ul class="logo_link">
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="snsIcon_wrap">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/footer/Kakaotalk.svg" alt="카카오톡 아이콘">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/footer/facebook.svg" alt="페이스북 아이콘">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/footer/instagram.svg" alt="인스타그램 아이콘">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/footer/youtube.svg" alt="유튜브 아이콘">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="img/footer/Naver.svg" alt="네이버 아이콘">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Company_informat">
+                <div class="Company_informat_inner">
+                    <ul>
+                        <li>해비치호텔앤드리조트(주)</li>
+                        <li>사업자등록번호 616-81-27929</li>
+                        <li>통신판매신고번호 제주남원00040호</li>
+                        <li>대표이사 김민수</li>
+                    </ul>
+                    <span class="copyright">COPYRIGHT 2018 Haevichi hotels & resorts Co.LTD. All Right Reserved.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--예약 영역-->
+    <div class="reservatn_calendar">
+        <!--닫기 아이콘-->
+        <div class="close_icon">
+            <img src="img/calendar-quick-menu/Close_square.svg" alt="Close"/>
+        </div>
+        <!--예약 검색 랩핑-->
+        <div class="reservatn_Wrap">
+            <div class="container">
+                <img src="img/calendar-quick-menu/calendar-icon-white.svg" alt="calender_icon_fff">
+            </div>
+            <!--예약 검색창-->
+            <div class="search_list_map">
+                <!--타이틀 및 호텔/리조트 선택-->
+                <div class="rooms_out_box">
+                    <!--예약 타이틀-->
+                    <h1>CHOOSE YOUR STAY</h1>
+                    <!--호텔/리조트 선택-->
+                    <div class="select_room_type_wrap">
+                        <ul class="select_room_type">
+                            <li>
+                                <span class="title">호텔/리조트 선택</span>
+                                <span class="down_icon">
+                                    <img src="img/calendar-quick-menu/Expand_down.svg" alt="down_icon">
+                                </span>
+                                <ul class="room_list">
+                                    <li>HAVEICHI HOTEL JEJU</li>
+                                    <li>HAVEICHI RESORT JEJU</li>
+                                    <li>ROLLINGHILLS HOTEL</li>
+                                    <li>WESTIN RESORT GUAM</li>
+                                    <li>COUNTRY CLUB JEJU</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--날짜 선택-->
+                <div class="select_date">
+                    <div class="title">날짜</div>
+                    <div class="select_date_wrap">
+                        <span class="checkInOut_date">12.04(금) - 12.05(토)</span>
+                        <span class="day_icon_box">
+                            <img src="img/calendar-quick-menu/day.svg" alt="day_icon">
+                        </span>
+                        <span class="days">1박</span>
+                    </div>
+                </div>
+                <!--인원 선택-->
+                <div class="select_personnel">
+                    <!--성인 랩핑-->
+                    <div class="adult_left">
+                        <span>성인</span>
+                        <div class="personnel_count_wrap">
+                            <span class="personnel_count">1</span>
+                            <span class="personnel_remove_icon">
+                                <img src="img/calendar-quick-menu/out_square_duotone_line.svg" alt="out_square_icon">
+                            </span>
+                            <span class="personnel_add_icon">
+                                <img src="img/calendar-quick-menu/Add_square_duotone_line.svg" alt="add_square_icon">
+                            </span>
+                        </div>
+                    </div>
+                    <!--어린이 랩핑-->
+                    <div class="children_right">
+                        <span>어린이</span>
+                        <div class="personnel_count_wrap">
+                            <span class="personnel_count">0</span>
+                            <span class="personnel_remove_icon">
+                                <img src="img/calendar-quick-menu/out_square_duotone_line.svg" alt="out_square_icon">
+                            </span>
+                            <span class="personnel_add_icon">
+                                <img src="img/calendar-quick-menu/Add_square_duotone_line.svg" alt="add_square_icon">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <!--객실추가 및 검색-->
+                <div class="select_add_room">
+                    <span>+ 객실 추가</span>
+                    <span class="Search_btn">검색</span>
+                </div>
+            </div>
+            <!--체크인 날짜 달력 영역-->
+            <div class="checkinDay">
+                <!--달력 닫기-->
+                <div class="calendar_close">
+                    <img src="img/calendar-quick-menu/Close_square2.svg" alt="Close2"/>
+                </div>
+                <!--달력-->
+                <div class="month_wrap">
+                    <!--현재 달-->
+                    <div class="now_month">
+                        <div class="month_wrap">
+                            <h1>
+                                2024년 10월
+                                <span>
+                                    <img src="img/calendar-quick-menu/Expand_right-icon.svg" alt="right-icon">
+                                </span>
+                            </h1>
+                            <div class="day">
+                                <ul class="week">
+                                    <li class="dayOff">Sun</li>
+                                    <li>Mon</li>
+                                    <li>Tue</li>
+                                    <li>Wed</li>
+                                    <li>Thu</li>
+                                    <li>Fri</li>
+                                    <li>Sat</li>
+                                </ul>
+                                <div class="dayBYday">
+                                    <ul>
+                                        <li class="dayOff Lightly">29</li>
+                                        <li class="Lightly">30</li>
+                                        <li class="Lightly">1</li>
+                                        <li class="Lightly">2</li>
+                                        <li class="Lightly">3</li>
+                                        <li class="today">4</li><!--오늘-->
+                                        <li>5</li><!--1주-->
+                                    </ul>
+                                    <ul>
+                                        <li class="dayOff">6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li>
+                                        <li>10</li>
+                                        <li>11</li>
+                                        <li>12</li><!--2주-->
+                                    </ul>
+                                    <ul>
+                                        <li class="dayOff">13</li>
+                                        <li>14</li>
+                                        <li>15</li>
+                                        <li>16</li>
+                                        <li>17</li>
+                                        <li>18</li>
+                                        <li>19</li><!--3주-->
+                                    </ul>
+                                    <ul>
+                                        <li class="dayOff">20</li>
+                                        <li>21</li>
+                                        <li>22</li>
+                                        <li>23</li>
+                                        <li>24</li>
+                                        <li>25</li>
+                                        <li>26</li><!--4주-->
+                                    </ul>
+                                    <ul>
+                                        <li class="dayOff">27</li>
+                                        <li>28</li>
+                                        <li>29</li>
+                                        <li>30</li>
+                                        <li>31</li>
+                                        <li class="Lightly">1</li><!--다음달 날짜-->
+                                        <li class="Lightly">2</li><!--5주-->
+                                    </ul>
+                                    <ul>
+                                        <li class="dayOff Lightly">3</li>
+                                        <li class="Lightly">4</li>
+                                        <li class="Lightly">5</li>
+                                        <li class="Lightly">6</li>
+                                        <li class="Lightly">7</li>
+                                        <li class="Lightly">8</li>
+                                        <li class="Lightly">9</li><!--6주-->
+                                    </ul>      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--다음 달-->
+                    <div class="next_month">
+                        <div class="month_wrap">
+                            <h1>
+                                2024년 11월
+                                <span>
+                                    <img src="img/calendar-quick-menu/Expand_right-icon.svg" alt="right-icon">
+                                </span>
+                            </h1>
+                            <div class="day">
+                                <ul class="week">
+                                    <li class="dayOff">Sun</li>
+                                    <li>Mon</li>
+                                    <li>Tue</li>
+                                    <li>Wed</li>
+                                    <li>Thu</li>
+                                    <li>Fri</li>
+                                    <li>Sat</li>
+                                </ul>
+                                <div class="dayBYday">
+                                    <ul>
+                                        <li class="dayOff Lightly">27</li>
+                                        <li class="Lightly">28</li>
+                                        <li class="Lightly">29</li>
+                                        <li class="Lightly">30</li>
+                                        <li class="Lightly">31</li>
+                                        <li>1</li>
+                                        <li>2</li><!--1주-->
+                                    </ul>
+                                    <ul>
+                                        <li class="dayOff">3</li>
+                                        <li>4</li>
+                                        <li>5</li>
+                                        <li>6</li>
+                                        <li>7</li>
+                                        <li>8</li>
+                                        <li>9</li><!--2주-->
+                                    </ul>
+                                    <ul>
+                                        <li class="dayOff">10</li>
+                                        <li>11</li>
+                                        <li>12</li>
+                                        <li>13</li>
+                                        <li>14</li>
+                                        <li>15</li>
+                                        <li>16</li><!--3주-->
+                                    </ul>
+                                    <ul>
+                                        <li class="dayOff">17</li>
+                                        <li>18</li>
+                                        <li>19</li>
+                                        <li>20</li>
+                                        <li>21</li>
+                                        <li>22</li>
+                                        <li>23</li><!--4주-->
+                                    </ul>
+                                    <ul>
+                                        <li class="dayOff">24</li>
+                                        <li>25</li>
+                                        <li>26</li>
+                                        <li>27</li>
+                                        <li>28</li>
+                                        <li class="Lightly">29</li><!--다음달 날짜-->
+                                        <li class="Lightly">30</li><!--5주-->
+                                    </ul>
+                                    <ul>
+                                        <li class="dayOff Lightly">1</li>
+                                        <li class="Lightly">2</li>
+                                        <li class="Lightly">3</li>
+                                        <li class="Lightly">4</li>
+                                        <li class="Lightly">5</li>
+                                        <li class="Lightly">6</li>
+                                        <li class="Lightly">7</li><!--6주-->
+                                    </ul>      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--TOP 버튼-->
+    <div class="window_top_wrap">
+        <img src="img/windowTop/chevron-up.svg" alt="up">
+    </div>
+</body>
+</html>
