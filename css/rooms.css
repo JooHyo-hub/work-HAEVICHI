@@ -90,6 +90,10 @@ div.logo{
     left: 50%;
     transform: translateX(-50%);
 }
+.logo > a{
+    display: block;
+    width: 100%;
+}
 /*로그인/회원가입/마이페이지*/
 .top_element div.login_container{
     width: 250px;
